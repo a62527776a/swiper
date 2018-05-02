@@ -1,5 +1,7 @@
 <template>
-<div ref="scroll-view" :style="{ height: height > 0 ? height + 'px' : viewportHeight + height + 'px' }">
+<div style="background: #DDD"
+     ref="scroll-view" 
+     :style="{ height: height > 0 ? height + 'px' : viewportHeight + height + 'px' }">
   <div>
     <slot />
   </div>
@@ -55,9 +57,9 @@ export default {
     initScroller() {
       this.scroller = new BScroll(this.$refs['scroll-view'], {
         // 设置当运行 momentum 动画时，超过边缘后的回弹整个动画时间 默认的太慢
-        swipeBounceTime: 200,
+        // swipeBounceTime: 200,
         // 滚动动画的动画时长。默认的太慢
-        swipeTime: 1000,
+        // swipeTime: 1000,
         // 只有在屏幕上快速滑动的时间小于 momentumLimitTime，才能开启 momentum 动画。默认的时间太短
         momentumLimitTime: 200,
         // 当 probeType 为 3 的时候，不仅在屏幕滑动的过程中，而且在 momentum 滚动动画运行过程中实时派发 scroll 事件。
@@ -68,10 +70,13 @@ export default {
               interactive: false // 是否可交互
             }
           : false,
-        pullDownRefresh: this.pullDownRefresh,
-        pullUpLoad: this.pullUpLoad,
+        // pullDownRefresh: this.pullDownRefresh,
+        // pullUpLoad: this.pullUpLoad,
+        pullDownRefresh: false,
+        pullUpLoad: false,
         preventDefault: false,
-        click: true
+        click: true,
+        eventPassthrough: 'horizontal'
       })
     },
     initViewportHeight() {
@@ -106,11 +111,7 @@ export default {
       })
     }
   },
-  mounted() {
-    this.initScroller()
-    if (this.pullDownRefresh || this.pullUpLoad) this.initScrollerY()
-    if (this.pullDownRefresh) this.initPullDownState()
-  },
+  mounted() {},
   created() {
     this.initViewportHeight()
   }

@@ -1,7 +1,7 @@
 <template>
   <div class="app-bar">
     <img src="http://img.rr.tv/fe/20180428/o_1524899087234.png" class="logo" />
-    <div class="downLoad tap-active">下载APP</div>
+    <div class="downLoad tap-grayscale-active">下载APP</div>
   </div>
 </template>
 

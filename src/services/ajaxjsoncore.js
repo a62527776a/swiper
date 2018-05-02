@@ -32,9 +32,9 @@ export let jsonCore = (url, method = 'GET', body = {}) => {
       // baseURL: util.isLocal() ? 'http://dev.rr.tv:28180' : util.isTest() ? 'http://test.rr.tv:8096' : util.isProd() ? 'https://api.rr.tv' : util.isBeta() ? 'http://beta.rr.tv' : '',
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
-        clientVersion: '3.7.0'
-        // clientType: util.clientType(),
-        // token: parseParams().token
+        clientVersion: '3.7.0',
+        clientType: 'android_RRMJ_REPLACE',
+        token: 'd9f9bb4475b94cb991d5027e6ca58563'
       },
       url: url,
       method: method,

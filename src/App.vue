@@ -1,11 +1,14 @@
 <template>
   <div id="app">
+    <transition name="fade">
+      <img class="splash-screen" v-if="$store.state.splashScreen.type" src="http://img.rr.tv/fe/20180502/o_1525228427612.jpg" />
+    </transition>
     <app-bar />
       <transition :name="routerTransition">
         <keep-alive>
           <router-view />
-      </keep-alive>
-    </transition>
+        </keep-alive>
+      </transition>
   </div>
 </template>
 
@@ -46,5 +49,17 @@ body {
 }
 html {
   overflow: hidden;
+}
+.splash-screen {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+* {
+  user-select: none;
 }
 </style>

@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import common from './components/common'
 import api from './services'
+import store from './store'
 
 import './plugins/flexible.js'
 
@@ -22,6 +23,7 @@ Vue.prototype.$api = api
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

@@ -5,8 +5,8 @@
 
 .transfer(@opacity, @translateX) {
   opacity: @opacity;
-  position: absolute;
   transform: @translateX;
+  position: absolute;
 }
 
 .root-navigator-slider-right-enter-active,
@@ -16,7 +16,9 @@
 .slider-right-enter-active,
 .slider-right-leave-active,
 .slider-left-enter-active,
-.slider-left-leave-active {
+.slider-left-leave-active,
+.slider-left-active,
+.slider-right-active {
   transition: all .3s;
 }
 

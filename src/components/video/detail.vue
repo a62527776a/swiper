@@ -1,22 +1,22 @@
 <template>
   <div style="background: white">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-    <img src="../../assets/logo.png" @click="$router.go(-1)">
-  </div>
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+  <img src="../../assets/default_img.png" @click="$router.go(-1)">
+</div>
 </template>
 
 <script>
